@@ -175,7 +175,7 @@ export default function Dashboard() {
     const newLink: GeneratedLink = {
       id: Date.now().toString(),
       platform,
-      url: `http://localhost:3000/${platform.toLowerCase() === 'google' ? 'gmail' : platform.toLowerCase()}/${user.id}`,
+      url: `https://authgo.vercel.app/${platform.toLowerCase() === 'google' ? 'gmail' : platform.toLowerCase()}/${user.id}`,
       shortUrl: `authgo.io/${platform.toLowerCase().substring(0, 3)}-${user.id.substring(0, 4)}`,
       clicks: 0,
       uniqueVisitors: 0,
