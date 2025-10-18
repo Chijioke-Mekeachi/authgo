@@ -185,8 +185,8 @@ export default function InstagramLogin() {
 
           {/* Sign Up Card */}
           <div className="bg-white border border-gray-300 rounded-sm p-4 text-center">
-            <p className="text-sm text-gray-900">
-              Don't have an account?{' '}
+            <p className="text-sm text-gray-900">{`
+              Don't have an account? `}
               <a href="#" className="text-blue-500 font-semibold hover:text-blue-700">
                 Sign up
               </a>

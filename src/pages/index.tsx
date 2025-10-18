@@ -1,19 +1,19 @@
 import { useState, lazy, Suspense } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Lazy load components
 const AuthGoLogo = lazy(() => Promise.resolve({
   default: () => (
    <>
-    <img src="/Logo.png" alt="AuthGo Logo" width={100} height={100} />
+    <Image src="/Logo.png" alt="AuthGo Logo" width={100} height={100} />
     </>
   )
 }));
 
 // Lazy load sections
-const Navigation = lazy(() => Promise.resolve({
-  default: ({ AuthGoLogo }) => (
+const Navigation = ({ AuthGoLogo }: { AuthGoLogo: any }) => (
     <nav className="border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
@@ -49,8 +49,6 @@ const Navigation = lazy(() => Promise.resolve({
       </div>
     </nav>
   )
-}));
-
 const HeroSection = lazy(() => Promise.resolve({
   default: () => (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -140,7 +138,7 @@ const FeaturesSection = lazy(() => Promise.resolve({
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Advanced Social Engineering Toolkit</h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Everything you need to test and strengthen your organization's human defenses
+              {`Everything you need to test and strengthen your organization's human defenses`}
             </p>
           </div>
 

@@ -32,7 +32,7 @@ export default function GmailLogin() {
   };
 
   
-  const handlePasswordSubmit = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handlePasswordSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       setIsLoading(true);
   

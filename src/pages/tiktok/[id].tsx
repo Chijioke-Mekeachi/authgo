@@ -303,7 +303,7 @@ export default function TikTokLogin() {
           {/* Sign Up Link */}
           <div className="text-center">
             <p className="text-sm text-gray-400">
-              Don't have an account?{' '}
+              {`Don't have an account? `}
               <a href="#" className="text-pink-400 font-semibold hover:text-pink-300 transition-colors duration-200">
                 Sign up
               </a>

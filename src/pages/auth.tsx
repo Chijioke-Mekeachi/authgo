@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Auth() {
   const [isLogin, setIsLogin] = useState(true);
@@ -103,7 +104,7 @@ export default function Auth() {
 
   const AuthGoLogo = () => (
     <>
-    <img src="/Logo.png" alt="AuthGo Logo" width={100} height={100} />
+    <Image src="/Logo.png" alt="AuthGo Logo" width={100} height={100} />
     </>
   );
 
@@ -393,7 +394,7 @@ export default function Auth() {
 
                 <h4 className="font-semibold text-white text-lg">6. Limitation of Liability</h4>
                 <p>
-                  In no event shall AuthGo be liable for any damages arising out of the use or inability to use the materials on AuthGo's services.
+                  {`In no event shall AuthGo be liable for any damages arising out of the use or inability to use the materials on AuthGo's services.`}
                 </p>
               </div>
             </div>
