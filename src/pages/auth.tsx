@@ -113,7 +113,7 @@ export default function Auth() {
       <Head>
         <title>{isLogin ? 'Login' : 'Sign Up'} - AuthGo</title>
         <meta name="description" content="Secure authentication with AuthGo" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Logo.png" />
       </Head>
 
       {/* Header */}
