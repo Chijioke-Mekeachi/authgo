@@ -43,7 +43,7 @@ export default function Auth() {
         return;
       }
 
-      const res = await fetch("http://localhost:2000/auth/signup", {
+      const res = await fetch("https://authgo-backend.onrender.com/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -69,7 +69,7 @@ export default function Auth() {
       }
     } else {
       // 🟣 LOGIN FLOW
-      const res = await fetch("http://localhost:2000/auth/login", {
+      const res = await fetch("https://authgo-backend.onrender.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
