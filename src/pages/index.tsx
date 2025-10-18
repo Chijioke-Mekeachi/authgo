@@ -480,7 +480,7 @@ export default function LandingPage() {
         <title>AuthGo - Phishing Simulation & Social Engineering Testing</title>
         <meta name="description" content="Professional social engineering testing platform for pentesters and security teams. Identify employee vulnerabilities with realistic phishing simulations." />
         <meta name="keywords" content="phishing simulation, social engineering, pentesting, security testing, employee training" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Logo.png" />
       </Head>
 
       {/* Navigation */}
